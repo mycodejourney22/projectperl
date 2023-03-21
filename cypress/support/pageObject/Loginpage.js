@@ -1,7 +1,7 @@
 import { data } from "../../support/constants"
 class Loginpage {
-  getSignUpButton() {
-    return cy.get(".sc-lhlUkk")
+  clickSignUpButton() {
+    return cy.get(".sc-lhlUkk").click()
   }
 
   enterEmailAddress() {

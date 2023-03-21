@@ -1,10 +1,10 @@
 class Landingpage {
-  getLoginButton() {
-    return cy.get(".sc-HLtgk > .sc-bHnazb > a")
+  clickLoginButton() {
+    return cy.get(".sc-HLtgk > .sc-bHnazb > a").click()
   }
 
-  getAcceptCAllCookiesButton() {
-    return cy.get(".sc-gKPRtg:nth-child(2) > .sc-bqWxrE")
+  acceptCAllCookiesButton() {
+    return cy.get(".sc-gKPRtg:nth-child(2) > .sc-bqWxrE").click()
   }
 
   clickSearchInputField() {

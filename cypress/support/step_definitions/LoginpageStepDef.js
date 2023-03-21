@@ -5,7 +5,7 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor"
 const loginPage = new LoginPage()
 
 Then("User clicks on sign up button", () => {
-  loginPage.getSignUpButton().click()
+  loginPage.clickSignUpButton()
 })
 
 Then("User enters the email address for login", () => {

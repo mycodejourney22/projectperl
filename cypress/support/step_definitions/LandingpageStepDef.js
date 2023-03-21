@@ -10,9 +10,9 @@ Then('user click enter in the search box', () => {
 
 Given('User navigates to the application', () => {
   cy.visit(Cypress.env("url"))
-  landingPage.getAcceptCAllCookiesButton().click()
+  landingPage.acceptCAllCookiesButton()
 })
 
 When('User click on the login button on landing page', () => {
-  landingPage.getLoginButton().click()
+  landingPage.clickLoginButton()
 })
