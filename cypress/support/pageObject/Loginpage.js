@@ -1,23 +1,23 @@
 import { data } from "../../support/constants"
 class Loginpage {
   clickSignUpButton() {
-    return cy.get(".sc-lhlUkk").click()
+    cy.get('[data-testid="CheckoutNavBar-SignUpLink"]').click()
   }
 
   enterEmailAddress() {
-    return cy.get("#input-email").type(data.signinemail)
+    cy.get("#input-email").type(data.signinemail)
   }
 
   clickContinueButton() {
-    return cy.get(".sc-jIILKH").click()
+    cy.get("div:nth-child(1) > button").click()
   }
 
   enterPassword() {
-    return cy.get("div:nth-child(3) > input").type(data.password)
+    cy.get("div:nth-child(3) > input").type(data.password)
   }
 
   clickLoginButton() {
-    return cy.get(".sc-jIILKH").click()
+    cy.get("div:nth-child(1) > button").click()
   }
 }
 
